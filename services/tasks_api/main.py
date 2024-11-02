@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from magnum import Magnum
+from mangum import Mangum
 
 app = FastAPI()
 app.add_middleware(
@@ -17,4 +17,4 @@ def health_check():
     return {"message": "OK"}
 
 
-handle = Magnum(app)
+handle = Mangum(app)
