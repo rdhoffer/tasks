@@ -17,4 +17,4 @@ def health_check():
     return {"message": "OK"}
 
 
-handle = Mangum(app)
+handle = Magnum(app)
